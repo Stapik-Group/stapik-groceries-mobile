@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Stapik Groceries Mobile</string>
+
+    <string name="connect_title">Mit Stapik Cloud verbinden</string>
+    <string name="connect_server_url_label">Server-URL</string>
+    <string name="connect_api_key_label">API-Schlüssel</string>
+    <string name="connect_save_button">Speichern &amp; verbinden</string>
+    <string name="connect_testing">Verbindung wird hergestellt…</string>
+    <string name="connect_error_prefix">Verbindung fehlgeschlagen: %1$s</string>
+    <string name="connect_show_api_key">Anzeigen</string>
+    <string name="connect_hide_api_key">Verbergen</string>
+
+    <string name="settings_content_description">Einstellungen</string>
+
+    <string name="months_no_months">Noch keine Monate</string>
+    <string name="months_filter_all_years">Alle Jahre</string>
+    <string name="months_not_connected">Nicht verbunden</string>
+    <string name="months_planned_short">Geplant: %1$s</string>
+    <string name="months_real_short">Tatsächlich: %1$s</string>
+    <string name="months_stale_banner">Zwischengespeicherte Daten vom %1$s</string>
+
+    <string name="detail_back">Zurück</string>
+    <string name="detail_no_products">Keine Produkte in diesem Monat</string>
+
+    <string name="summary_planned">Geplant</string>
+    <string name="summary_real">Tatsächlich</string>
+    <string name="summary_savings">Ersparnis</string>
+    <string name="summary_off_budget">Außerhalb der Liste</string>
+    <string name="summary_projected">Geschätzte Monatskosten</string>
+
+    <string name="table_purchased_line">gekauft: %1$s %2$s (Ø %3$s/%2$s) = %4$s</string>
+    <string name="table_savings_line">Ersparnis: %1$s</string>
+    <string name="category_none">(keine Kategorie)</string>
+
+    <string name="stats_title">Monatsstatistik</string>
+    <string name="stats_view_list">Liste</string>
+    <string name="stats_view_chart">Diagramm</string>
+    <string name="stats_projected">Geschätzte Kosten</string>
+    <string name="stats_no_data">Keine Daten vorhanden</string>
+
+    <string name="menu_statistics">Statistik</string>
+    <string name="menu_connect">Verbinden</string>
+    <string name="menu_about">Über die App</string>
+
+    <string name="settings_theme_label">Design</string>
+    <string name="theme_classic">Klassisch</string>
+    <string name="theme_modern">Modern</string>
+    <string name="theme_classic_pink">Klassisch Pink</string>
+
+    <string name="about_title">Stapik Groceries (Android)</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_description">Schreibgeschützte mobile Begleit-App für Stapik Groceries.</string>
+    <string name="about_author">Sebastian Smoliński</string>
+    <string name="about_source_code">Quellcode auf GitHub ansehen</string>
+
+    <string name="error_no_network">Keine Netzwerkverbindung.</string>
+    <string name="error_unauthorized">Ungültige Server-URL oder API-Schlüssel.</string>
+    <string name="error_not_found">Das Einkaufsdokument wurde auf dem Server nicht gefunden. Überprüfe die Verbindungseinstellungen.</string>
+    <string name="error_cannot_verify">Keine Antwort vom Server - diese Zugangsdaten konnten nicht überprüft werden.</string>
+    <string name="error_invalid_data">Das Dokument auf dem Server konnte nicht gelesen werden.</string>
+    <string name="error_unknown">Etwas ist schiefgelaufen: %1$s</string>
+
+    <string name="retry">Erneut versuchen</string>
+    <string name="menu_weekly_plan">Liste für diese Woche</string>
+    <string name="weekly_plan_title">Einkaufsliste für diese Woche</string>
+    <string name="weekly_week_format">Woche %1$d von %2$d</string>
+    <string name="weekly_no_category">Keine Kategorie</string>
+    <string name="weekly_empty_title">Nichts mehr zu planen</string>
+    <string name="weekly_empty_body">Alles, was für diesen Monat geplant war, wurde bereits gekauft — diese Woche gibt es nichts mehr zu kaufen.</string>
+    <string name="weekly_no_month">Keine Liste für den aktuellen Monat verfügbar</string>
+    <string name="weekly_uncheck_all">Alle abwählen</string>
+    <string name="weekly_progress">gekauft %1$d / %2$d</string>
+    <string name="weekly_local_hint">Häkchen werden nur auf diesem Gerät gespeichert.</string>
+    <string name="weekly_month_ended">%1$s ist bereits vorbei — es gibt nichts mehr zu planen.</string>
+</resources>

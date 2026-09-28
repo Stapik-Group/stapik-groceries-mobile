@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Stapik Groceries Mobile</string>
+
+    <string name="connect_title">Połącz ze Stapik Cloud</string>
+    <string name="connect_server_url_label">Adres serwera</string>
+    <string name="connect_api_key_label">Klucz API</string>
+    <string name="connect_save_button">Zapisz i połącz</string>
+    <string name="connect_testing">Łączenie…</string>
+    <string name="connect_error_prefix">Nie udało się połączyć: %1$s</string>
+    <string name="connect_show_api_key">Pokaż</string>
+    <string name="connect_hide_api_key">Ukryj</string>
+
+    <string name="settings_content_description">Ustawienia</string>
+
+    <string name="months_no_months">Brak jeszcze żadnych miesięcy</string>
+    <string name="months_filter_all_years">Wszystkie lata</string>
+    <string name="months_not_connected">Nie połączono</string>
+    <string name="months_planned_short">Planowane: %1$s</string>
+    <string name="months_real_short">Realne: %1$s</string>
+    <string name="months_stale_banner">Dane z pamięci podręcznej z %1$s</string>
+
+    <string name="detail_back">Wstecz</string>
+    <string name="detail_no_products">Brak produktów w tym miesiącu</string>
+
+    <string name="summary_planned">Planowane</string>
+    <string name="summary_real">Realne</string>
+    <string name="summary_savings">Oszczędności</string>
+    <string name="summary_off_budget">Spoza listy</string>
+    <string name="summary_projected">Szacowany koszt miesiąca</string>
+
+    <string name="table_purchased_line">kupione: %1$s %2$s (śr. %3$s/%2$s) = %4$s</string>
+    <string name="table_savings_line">oszczędności: %1$s</string>
+    <string name="category_none">(bez kategorii)</string>
+
+    <string name="stats_title">Statystyki miesięczne</string>
+    <string name="stats_view_list">Lista</string>
+    <string name="stats_view_chart">Wykres</string>
+    <string name="stats_projected">Szacowany koszt</string>
+    <string name="stats_no_data">Brak danych do wyświetlenia</string>
+
+    <string name="menu_statistics">Statystyki</string>
+    <string name="menu_connect">Połącz</string>
+    <string name="menu_about">O aplikacji</string>
+
+    <string name="settings_theme_label">Motyw</string>
+    <string name="theme_classic">Klasyczny</string>
+    <string name="theme_modern">Nowoczesny</string>
+    <string name="theme_classic_pink">Klasyczny różowy</string>
+
+    <string name="about_title">Stapik Groceries (Android)</string>
+    <string name="about_version">Wersja %1$s</string>
+    <string name="about_description">Kompanion mobilny (tylko do odczytu) dla Stapik Groceries.</string>
+    <string name="about_author">Sebastian Smoliński</string>
+    <string name="about_source_code">Zobacz kod źródłowy na GitHub</string>
+
+    <string name="error_no_network">Brak połączenia z siecią.</string>
+    <string name="error_unauthorized">Nieprawidłowy adres serwera lub klucz API.</string>
+    <string name="error_not_found">Nie znaleziono dokumentu zakupów na serwerze. Sprawdź ustawienia połączenia.</string>
+    <string name="error_cannot_verify">Brak odpowiedzi z serwera - nie udało się zweryfikować tych danych.</string>
+    <string name="error_invalid_data">Nie udało się odczytać dokumentu z serwera.</string>
+    <string name="error_unknown">Coś poszło nie tak: %1$s</string>
+
+    <string name="retry">Spróbuj ponownie</string>
+    <string name="menu_weekly_plan">Lista na ten tydzień</string>
+    <string name="weekly_plan_title">Lista zakupów na ten tydzień</string>
+    <string name="weekly_week_format">Tydzień %1$d z %2$d</string>
+    <string name="weekly_no_category">Bez kategorii</string>
+    <string name="weekly_empty_title">Brak zakupów do zaplanowania</string>
+    <string name="weekly_empty_body">Wszystko zaplanowane na ten miesiąc zostało już kupione — w tym tygodniu nie ma nic do dokupienia.</string>
+    <string name="weekly_no_month">Brak listy na bieżący miesiąc</string>
+    <string name="weekly_uncheck_all">Odznacz wszystko</string>
+    <string name="weekly_progress">kupiono %1$d / %2$d</string>
+    <string name="weekly_local_hint">Odhaczenia są zapisywane tylko na tym urządzeniu.</string>
+    <string name="weekly_month_ended">%1$s już minął — nie ma już nic do zaplanowania.</string>
+</resources>
