@@ -21,3 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "stapik-groceries-mobile"
 include(":app")
+
+val commonDir = providers.gradleProperty("stapikCommonMobileDir").getOrElse("libs/stapik-common-mobile")
+apply(from = "$commonDir/stapik-common-mobile.settings.gradle.kts")
