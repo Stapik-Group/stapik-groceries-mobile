@@ -1,15 +1,6 @@
 <resources>
     <string name="app_name">Stapik Groceries Mobile</string>
 
-    <string name="connect_title">Połącz ze Stapik Cloud</string>
-    <string name="connect_server_url_label">Adres serwera</string>
-    <string name="connect_api_key_label">Klucz API</string>
-    <string name="connect_save_button">Zapisz i połącz</string>
-    <string name="connect_testing">Łączenie…</string>
-    <string name="connect_error_prefix">Nie udało się połączyć: %1$s</string>
-    <string name="connect_show_api_key">Pokaż</string>
-    <string name="connect_hide_api_key">Ukryj</string>
-
     <string name="settings_content_description">Ustawienia</string>
 
     <string name="months_no_months">Brak jeszcze żadnych miesięcy</string>
@@ -40,23 +31,10 @@
 
     <string name="menu_statistics">Statystyki</string>
     <string name="menu_connect">Połącz</string>
-    <string name="menu_about">O aplikacji</string>
-
-    <string name="settings_theme_label">Motyw</string>
-    <string name="theme_classic">Klasyczny</string>
-    <string name="theme_modern">Nowoczesny</string>
-    <string name="theme_classic_pink">Klasyczny różowy</string>
-
-    <string name="about_title">Stapik Groceries (Android)</string>
-    <string name="about_version">Wersja %1$s</string>
-    <string name="about_description">Kompanion mobilny (tylko do odczytu) dla Stapik Groceries.</string>
-    <string name="about_author">Sebastian Smoliński</string>
-    <string name="about_source_code">Zobacz kod źródłowy na GitHub</string>
 
     <string name="error_no_network">Brak połączenia z siecią.</string>
     <string name="error_unauthorized">Nieprawidłowy adres serwera lub klucz API.</string>
     <string name="error_not_found">Nie znaleziono dokumentu zakupów na serwerze. Sprawdź ustawienia połączenia.</string>
-    <string name="error_cannot_verify">Brak odpowiedzi z serwera - nie udało się zweryfikować tych danych.</string>
     <string name="error_invalid_data">Nie udało się odczytać dokumentu z serwera.</string>
     <string name="error_unknown">Coś poszło nie tak: %1$s</string>
 
