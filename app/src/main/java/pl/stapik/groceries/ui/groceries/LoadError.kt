@@ -15,7 +15,6 @@ sealed interface LoadError {
     data object NoNetwork : LoadError
     data object Unauthorized : LoadError
     data object NotFound : LoadError
-    data object CannotVerify : LoadError
     data object InvalidData : LoadError
 
     /** The cloud data cannot be read (encrypted, wrong passphrase, newer format); [messageKey] is a library message key. */
@@ -50,7 +49,6 @@ fun LoadError.toDisplayMessage(): String = when (this) {
     LoadError.NoNetwork -> stringResource(R.string.error_no_network)
     LoadError.Unauthorized -> stringResource(R.string.error_unauthorized)
     LoadError.NotFound -> stringResource(R.string.error_not_found)
-    LoadError.CannotVerify -> stringResource(R.string.error_cannot_verify)
     LoadError.InvalidData -> stringResource(R.string.error_invalid_data)
     is LoadError.Unreadable -> Messages.text(LocalContext.current, messageKey)
     is LoadError.Unknown -> stringResource(R.string.error_unknown, message)

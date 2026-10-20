@@ -4,7 +4,5 @@ enum class AppScreen {
     MONTHS,
     STATS,
     WEEKLY,
-    CONNECT,
-    THEME,
-    ABOUT,
+    SETTINGS,
 }
