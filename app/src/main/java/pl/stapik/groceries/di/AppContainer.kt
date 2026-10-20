@@ -6,8 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.CreationExtras
 import pl.stapik.groceries.data.cache.DataStoreGroceriesCacheStorage
 import pl.stapik.groceries.data.config.ApiConfigStorage
-import pl.stapik.groceries.data.config.ApiSchemaGuard
-import pl.stapik.groceries.data.config.DataStoreApiConfigStorage
+import pl.stapik.groceries.data.config.ConnectionApiConfigStorage
 import pl.stapik.groceries.data.local.DataStoreWeeklyPlanCheckStorage
 import pl.stapik.groceries.data.local.WeeklyPlanCheckStorage
 import pl.stapik.groceries.data.network.RetrofitGroceriesRemoteSource
@@ -24,11 +23,10 @@ import pl.stapik.groceries.ui.weekly.WeeklyPlanViewModel
 class AppContainer(context: Context) {
     private val appContext = context.applicationContext
 
-    private val configStorage: ApiConfigStorage = DataStoreApiConfigStorage(appContext)
+    private val configStorage: ApiConfigStorage = ConnectionApiConfigStorage(appContext)
     private val themeStorage: ThemePreferenceStorage = DataStoreThemePreferenceStorage(appContext)
     private val weeklyPlanChecks: WeeklyPlanCheckStorage = DataStoreWeeklyPlanCheckStorage(appContext)
     private val weeklyPlanGenerator = WeeklyPlanGenerator()
-    private val schemaGuard = ApiSchemaGuard(appContext, configStorage)
     private val repository = GroceriesRepository(
         remote = RetrofitGroceriesRemoteSource(),
         cache = DataStoreGroceriesCacheStorage(appContext),
@@ -39,7 +37,7 @@ class AppContainer(context: Context) {
         @Suppress("UNCHECKED_CAST")
         override fun <T : ViewModel> create(modelClass: Class<T>, extras: CreationExtras): T = when {
             modelClass.isAssignableFrom(GroceriesViewModel::class.java) ->
-                GroceriesViewModel(repository, configStorage, schemaGuard)
+                GroceriesViewModel(repository, configStorage)
             modelClass.isAssignableFrom(ConnectViewModel::class.java) ->
                 ConnectViewModel(repository, configStorage)
             modelClass.isAssignableFrom(ThemeViewModel::class.java) ->

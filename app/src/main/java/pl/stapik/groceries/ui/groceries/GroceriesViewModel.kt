@@ -8,14 +8,12 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import pl.stapik.groceries.data.config.ApiConfigStorage
-import pl.stapik.groceries.data.config.ApiSchemaGuard
 import pl.stapik.groceries.data.repository.GroceriesFetchOutcome
 import pl.stapik.groceries.data.repository.GroceriesRepository
 
 class GroceriesViewModel(
     private val repository: GroceriesRepository,
     private val configStorage: ApiConfigStorage,
-    private val schemaGuard: ApiSchemaGuard,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow<GroceriesUiState>(GroceriesUiState.Loading)
@@ -37,7 +35,6 @@ class GroceriesViewModel(
             }
 
             try {
-                schemaGuard.ensureCurrentSchema()
                 val config = configStorage.load()
                 if (config == null) {
                     _uiState.value = GroceriesUiState.NotConnected
