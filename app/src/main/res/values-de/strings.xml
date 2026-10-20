@@ -1,15 +1,6 @@
 <resources>
     <string name="app_name">Stapik Groceries Mobile</string>
 
-    <string name="connect_title">Mit Stapik Cloud verbinden</string>
-    <string name="connect_server_url_label">Server-URL</string>
-    <string name="connect_api_key_label">API-Schlüssel</string>
-    <string name="connect_save_button">Speichern &amp; verbinden</string>
-    <string name="connect_testing">Verbindung wird hergestellt…</string>
-    <string name="connect_error_prefix">Verbindung fehlgeschlagen: %1$s</string>
-    <string name="connect_show_api_key">Anzeigen</string>
-    <string name="connect_hide_api_key">Verbergen</string>
-
     <string name="settings_content_description">Einstellungen</string>
 
     <string name="months_no_months">Noch keine Monate</string>
@@ -40,23 +31,10 @@
 
     <string name="menu_statistics">Statistik</string>
     <string name="menu_connect">Verbinden</string>
-    <string name="menu_about">Über die App</string>
-
-    <string name="settings_theme_label">Design</string>
-    <string name="theme_classic">Klassisch</string>
-    <string name="theme_modern">Modern</string>
-    <string name="theme_classic_pink">Klassisch Pink</string>
-
-    <string name="about_title">Stapik Groceries (Android)</string>
-    <string name="about_version">Version %1$s</string>
-    <string name="about_description">Schreibgeschützte mobile Begleit-App für Stapik Groceries.</string>
-    <string name="about_author">Sebastian Smoliński</string>
-    <string name="about_source_code">Quellcode auf GitHub ansehen</string>
 
     <string name="error_no_network">Keine Netzwerkverbindung.</string>
     <string name="error_unauthorized">Ungültige Server-URL oder API-Schlüssel.</string>
     <string name="error_not_found">Das Einkaufsdokument wurde auf dem Server nicht gefunden. Überprüfe die Verbindungseinstellungen.</string>
-    <string name="error_cannot_verify">Keine Antwort vom Server - diese Zugangsdaten konnten nicht überprüft werden.</string>
     <string name="error_invalid_data">Das Dokument auf dem Server konnte nicht gelesen werden.</string>
     <string name="error_unknown">Etwas ist schiefgelaufen: %1$s</string>
 

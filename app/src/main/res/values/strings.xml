@@ -1,15 +1,6 @@
 <resources>
     <string name="app_name">Stapik Groceries Mobile</string>
 
-    <string name="connect_title">Connect to Stapik Cloud</string>
-    <string name="connect_server_url_label">Server URL</string>
-    <string name="connect_api_key_label">API key</string>
-    <string name="connect_save_button">Save &amp; connect</string>
-    <string name="connect_testing">Connecting…</string>
-    <string name="connect_error_prefix">Connection failed: %1$s</string>
-    <string name="connect_show_api_key">Show</string>
-    <string name="connect_hide_api_key">Hide</string>
-
     <string name="settings_content_description">Settings</string>
 
     <string name="months_no_months">No months yet</string>
@@ -41,23 +32,10 @@
 
     <string name="menu_statistics">Statistics</string>
     <string name="menu_connect">Connect</string>
-    <string name="menu_about">About</string>
-
-    <string name="settings_theme_label">Theme</string>
-    <string name="theme_classic">Classic</string>
-    <string name="theme_modern">Modern</string>
-    <string name="theme_classic_pink">Classic Pink</string>
-
-    <string name="about_title">Stapik Groceries (Android)</string>
-    <string name="about_version">Version %1$s</string>
-    <string name="about_description">Read-only mobile companion for Stapik Groceries.</string>
-    <string name="about_author">Sebastian Smoliński</string>
-    <string name="about_source_code">View source code on GitHub</string>
 
     <string name="error_no_network">No network connection.</string>
     <string name="error_unauthorized">Invalid server URL or API key.</string>
     <string name="error_not_found">Groceries document was not found on the server. Check the connection settings.</string>
-    <string name="error_cannot_verify">No response from the server - these credentials could not be verified.</string>
     <string name="error_invalid_data">The document on the server could not be read.</string>
     <string name="error_unknown">Something went wrong: %1$s</string>
 
