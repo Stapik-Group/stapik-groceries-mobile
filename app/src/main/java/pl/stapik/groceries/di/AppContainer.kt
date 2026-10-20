@@ -9,7 +9,6 @@ import pl.stapik.groceries.data.config.ApiConfigStorage
 import pl.stapik.groceries.data.config.ConnectionApiConfigStorage
 import pl.stapik.groceries.data.local.DataStoreWeeklyPlanCheckStorage
 import pl.stapik.groceries.data.local.WeeklyPlanCheckStorage
-import pl.stapik.groceries.data.network.RetrofitGroceriesRemoteSource
 import pl.stapik.groceries.data.repository.GroceriesRepository
 import pl.stapik.groceries.data.serialization.GroceriesDocumentParser
 import pl.stapik.groceries.domain.planning.WeeklyPlanGenerator
@@ -28,7 +27,6 @@ class AppContainer(context: Context) {
     private val weeklyPlanChecks: WeeklyPlanCheckStorage = DataStoreWeeklyPlanCheckStorage(appContext)
     private val weeklyPlanGenerator = WeeklyPlanGenerator()
     private val repository = GroceriesRepository(
-        remote = RetrofitGroceriesRemoteSource(),
         cache = DataStoreGroceriesCacheStorage(appContext),
         parser = GroceriesDocumentParser(),
     )

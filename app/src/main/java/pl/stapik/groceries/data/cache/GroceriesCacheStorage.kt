@@ -5,7 +5,8 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import kotlinx.coroutines.flow.first
-import pl.stapik.groceries.data.network.RawDocument
+
+data class RawDocument(val content: String, val updatedAt: String)
 
 interface GroceriesCacheStorage {
     suspend fun load(): RawDocument?
